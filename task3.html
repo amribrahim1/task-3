@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HANDAZ VR</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+<style>
+* {box-sizing: border-box;}
+html, body {
+	width: 100%;
+	hight: 100%;
+	padding: 0;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px 10px;
+	height: 65px;
+}
+.header a {
+	margin: auto;
+	float: left;
+	padding: 13px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 16px; 
+	
+	
+  
+}
+.logoimg {
+	height: 40px;
+	margin: auto;
+	margin-left: 30px;
+}
+.header-right a:hover {
+	background-color: #ddd;
+	color: black;
+	border-radius: 9px;
+}
+
+.header-right {
+	float: right;
+	margin-right: 30px;
+}
+.work {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://handazvr.com/wp-content/uploads/2017/11/HandazVR-bg02.jpg);
+	height: 630px;
+	width: 100%;
+}
+.vr {
+	color: white;
+	position: absolute;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+}
+.vr .button {
+	width: 14%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.button:hover {
+	background-color: green;
+}
+.button .fa {
+	position: absolute;
+	margin-left: -20px;
+}
+.button:hover .fa {
+	position: absolute;
+	color: red;
+	
+}
+.button a {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;	
+}
+
+#slider,  #slider .slide{
+	width: 190px;
+	height: 60px;
+}
+#slider {
+	position: relative;
+	padding-top: -10%;
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 1.4em;
+}
+#slider .container {
+  position: relative;
+  width: 9000px; /* Assign an insanely large width */
+  animation: slide-animation 15s infinite;
+}
+#slider .slide {
+  color: #14b747;
+  text-align: center;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  
+}
+
+/* [ANIMATION] */
+@keyframes slide-animation {
+  0% { opacity: 1; right: 0; }
+  22% { opacity: 1; right: 0; }
+  33% { right: 100%; }
+  66% { right: 100%; }
+  77% { right: 200%; }
+  99% { opacity: 1; right: 200%; }
+  100% { opacity: 0; right: 200%; }
+}
+
+.about {
+	position: absolute;
+	top: 96%;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #3c3c3c;
+	color: white;
+	border-radius: 8px;
+	padding-bottom: 8px;
+}
+.about h2 {
+	position: relative;
+	margin-left: 3%;	
+}	
+.logo {
+	position: relative;
+	margin-left: 10%;
+	
+	float: left;
+}
+.about .fa {
+	position: relative;
+	
+	display: inline-block;
+	background-color: #4CAF50;
+	padding: 1%;
+	border-radius: 50%;
+	padd: auto;
+}
+.us {
+	display: inline-block;
+	position: relative;
+	top: 47%;
+	right: 2.5%;
+	float: right;
+	width: 55%;
+	margin: auto;
+}
+.service {
+	background-color: #f0f0f0;
+}
+.service h1 {
+	text-align: center;
+}	
+.service p {
+	text-align: center;
+}	
+.box {
+  float: left;
+  width: 28%;
+  height: 170px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 21px;
+  margin: 1%;
+  padding: 0 15px;
+  margin-left: 40px;
+  
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+.box:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+.our::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<a href="#"><img class="logoimg" src="http://handazvr.com/wp-content/uploads/2017/11/HANDAZ-VR-logo-side.png"></a>
+	<div class="header-right">
+		<a class="active" href="#">FACEBOOK</a>
+		<a href="#">YOUTUBE</a>
+		<a href="#">EMAIL</a>
+	</div>
+</div>
+<div class="work">
+	<div class="vr">
+		<h1>HANDAZ VR</h1>
+		<h3>JOIN THE LATEST ARCHITECTURAL MARKETING EXPERIENCE USING VIRTUAL REALITY</h3>
+		<div id="slider">
+		<div class="container">
+			<div class="slide">
+				<p><b>INTERACTIVE</b></p>
+			</div>
+			<div class="slide">
+				<p><b>REALISTIC</b></p>
+			</div>
+			<div class="slide">
+				<p><b>FAST</b></p>
+			</div>
+		</div>
+</div>
+		<div class="button">
+			<a href="#"class="btn primary shine"><i class="fa fa-rocket"></i>OUR WORK</a>
+		</div>
+		
+	</div>
+	
+</div>
+<div class="about">
+	<h2><i class="fa fa-user"></i>&ensp;&ensp;ABOUT US</h2>
+	<div class="logo"><img src="http://handazvr.com/wp-content/uploads/2017/11/HANDAZ-VR-logo-side.png"></div>
+	<div class="us">
+		<p>Handaz VR is a team of highly qualified Architects, 3D Artists, and Software Developers who aim to play a profound role in shaping the new paradigm of Architectural Marketing Experience using real-time Virtual Reality.</p>
+	</div>
+</div>
+
+<div class="service">
+<br><br><br><br><br><br><br><br><br><br><br>
+	<h1>OUR SERVICE</h1>
+	<p>TRUSTED, RELIABLE AND PROFESSIONAL SERVICES. TRUST US THE WORK YOU CAN’T DO YOURSELF.</p>
+<div class="our">
+  <div class="box">
+  <h2>VR Experiences</h2>
+  <p>Your client will be able to experience the space before it’s even built using our high quality Architectural VR experiences service</p>
+  </div>
+  <div class="box">
+  <h2>VR Experiences</h2>
+<p>We produce high quality 3D architectural animations, using storyboards that ensure that the fly/walk-throughs are never boring</p> 
+  </div>
+  <div class="box">
+  <h2>Interactive VR</h2>
+  <p>We create interactive VR experience where you can move furniture, change material,…etc. And all in real time!</p> 
+  </div>
+</div>
+</div>
